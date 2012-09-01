@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "fupload-rails"
   gem.require_paths = ["lib"]
   gem.version       = FuploadRails::VERSION
+
+  gem.add_dependency("mime-types")
 end

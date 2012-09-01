@@ -1,5 +1,7 @@
 module FuploadRails
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
+
+    engine_name 'fupload'
 
     isolate_namespace FuploadRails
 

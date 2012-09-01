@@ -1,4 +1,4 @@
-class FuploadRailsAssetUploader < CarrieWave::Uploader::Base
+class FuploadRailsAssetUploader < CarrierWave::Uploader::Base
   # Include RMagick or ImageScience support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
