@@ -1,2 +1,0 @@
-module FileUploaderRails::Helper
-end

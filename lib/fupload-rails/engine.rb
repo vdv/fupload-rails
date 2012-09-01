@@ -1,11 +1,11 @@
-module FileUploaderRails
+module FuploadRails
   class Engine < Rails::Engine
 
-    isolate_namespace 'fileuploader-rails'
+    isolate_namespace FuploadRails
 
     initializer "helper" do |app|
       ActiveSupport.on_load(:action_view) do
-        include FileUploaderRails::Helpers
+        include FuploadRails::Helpers
       end
     end
 
