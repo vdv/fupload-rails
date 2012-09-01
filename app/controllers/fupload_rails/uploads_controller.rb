@@ -20,5 +20,12 @@ class FuploadRails::UploadsController < ApplicationController
       render :json => {:error => @asset.errors.full_messages.join('. ')}
     end
   end
+
+  def destroy
+    asset = FuploadRails::Asset.find_by_id(params[:id])
+    asset.destroy
+
+    redirect_to request.referrer
+  end
 end
 

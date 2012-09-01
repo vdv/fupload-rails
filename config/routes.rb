@@ -1,3 +1,3 @@
 FuploadRails::Engine.routes.draw do
-  resources :uploads, :only => [:index, :create]
+  resources :uploads, :only => [ :index, :create, :destroy ]
 end
