@@ -12,7 +12,7 @@ class FuploadRails::UploadsController < ApplicationController
       asset_obj = asset_obj.find(params[:assetable_id])
       @asset.assetable = asset_obj if asset_obj
     end
-    @asset.data = RedactorRails::Http.normalize_param(file, request)
+    @asset.data = FuploadRails::Http.normalize_param(file, request)
 
     if @asset.save
       render :json => {:success => true}#{ :filelink => @asset.url }.to_json

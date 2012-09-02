@@ -6,9 +6,9 @@ module FuploadRails
   mattr_accessor :image_file_types
   @@image_file_types = ["jpg", "jpeg", "png", "gif", "tiff"]
 
-
   require 'fupload-rails/engine'
   require 'fupload-rails/helpers'
+  require 'fupload-rails/controller_helpers'
 
   autoload :Http, 'fupload-rails/http'
 end

@@ -9,6 +9,9 @@ module FuploadRails
       ActiveSupport.on_load(:action_view) do
         include FuploadRails::Helpers
       end
+      ActiveSupport.on_load(:action_controller) do
+        include FuploadRails::ControllerHelpers
+      end
     end
 
   end
